@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>简介大气自适应横排导航</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header" class="construct clear-float">
+    <div class="logo fl">
+        Doc<span>type</span>
+    </div>
+    <div class="navs">
+        <ul>
+            <li class="hasmenu active"><a href="#">首页</a></li>
+            <li class="hasmenu"><a href="#">音乐</a></li>
+            <li><a href="#">图片</a></li>
+            <li class="hasmenu"><a href="#">文章</a></li>
+            <li><a href="#">影片</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+        <div class="menu-container">
+            <div class="menu-bg">
+                <div class="menu">
+                    <div class="scroll clear-float">
+                        <div class="plate fl">
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字1</p>
+                            </div>
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字2</p>
+                            </div>
+                        </div>
+                        <div class="plate fl">
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字3</p>
+                            </div>
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字4</p>
+                            </div>
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字5</p>
+                            </div>
+                        </div>
+                        <div class="plate fl">
+                            <div class="linker">
+                                <img src="image/nav_yang.jpg" alt="">
+                                <p>示例文字6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search fr clear-float">
+        <form action="#">
+            <input type="text" class="fl" placeholder="输入搜索内容">
+            <button type="submit" class="fl"></button>
+        </form>
+
+    </div>
+</div>
+<div id="body">
+    <div class="banner">
+        <div class="image imageload" origin-data="image/02.jpg"></div>
+        <div class="image imageload" origin-data="image/03.jpg"></div>
+        <div class="image imageload" origin-data="image/06.jpg"></div>
+    </div>
+</div>
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="script/jquery.easing.min.js"></script>
+<script src="script/EasyBanner.js"></script>
+<script src="script/common.js"></script>
+<script>
+
+    var banner = new EasyBanner({
+        wrap : '#body .banner',
+        img : '.image',
+        speed : 6000,
+        interval : 10000
+    });
+</script>
+</body>
+</html>
